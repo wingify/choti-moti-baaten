@@ -10,7 +10,7 @@ keywords: wingify, coding, wisdom, quotes
 timezone: Asia/Kolkata
 
 baseurl: "/choti-moti-baaten" # the subpath of your site, e.g. /blog/
-url: "http://kushagragour.wingified.com/" # the base hostname & protocol for your site
+url: "http://engineering.wingify.com" # the base hostname & protocol for your site
 twitter_username: wingify_engg
 github_username:  wingify
 

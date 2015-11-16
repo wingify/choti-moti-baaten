@@ -8,4 +8,4 @@ permalink: /about/
 
 So here it is. Enjoy and learn!
 
-This site is developed on Jekyll and you can find the source code at: [github.com/wingify/choti-moti-baten](https://github.com/wingify/choti-moti-baten)
+This site is developed on Jekyll and you can find the source code at: [github.com/wingify/choti-moti-baaten](https://github.com/wingify/choti-moti-baaten)
