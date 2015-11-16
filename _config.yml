@@ -1,0 +1,38 @@
+safe: true
+
+# Site settings
+title: Choti par moti baaten
+permalink: /:title/
+email: engineering@wingify.com
+description: > # this means to ignore newlines until "baseurl:"
+  Some simple statements about coding that contain high amount of wisdom and knowledge.
+keywords: wingify, coding, wisdom, quotes
+timezone: Asia/Kolkata
+
+baseurl: "/choti-moti-baaten" # the subpath of your site, e.g. /blog/
+url: "http://kushagragour.wingified.com/" # the base hostname & protocol for your site
+twitter_username: wingify_engg
+github_username:  wingify
+
+# Build settings
+markdown: kramdown
+
+authors:
+ ankit_jain:
+  twitter: ankneo
+ sparsh_gupta:
+  twitter: sparshgupta
+ himanshu_kapoor:
+  twitter: himkp
+ kushagra_gour:
+  twitter: chinchang457
+ suchit_puri:
+  twitter: suchitpuri
+ rahul_jain:
+  twitter: rahuljain12
+ kamal_sahni:
+  twitter: kamalsahni1
+ apoorv_saxena:
+  twitter: apoorv_saxena
+ ashish_bardhan:
+  twitter: CreativeBakchod

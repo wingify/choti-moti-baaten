@@ -1,0 +1,24 @@
+<div class="post">
+
+	{% assign author = site.authors[include.post.authorslug] %}
+	<header class="post-header">
+		<p class="post-meta">{{ include.post.date | date: "%b %-d, %Y" }}{% if include.post.authorslug %} • <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>{% endif %}{% if include.post.meta %} • {{ include.post.meta }}{% endif %}</p>
+	</header>
+
+	<article class="post-content text-big">
+	{{ include.post.content }}
+	</article>
+
+	<div class="nav-btns">
+		<a href="{{ include.post.previous.url | prepend: site.baseurl }}" class="btn {% if include.post.previous == nil %}disabled{% endif %}"><</a>
+
+		<a href="{{ include.post.next.url | prepend: site.baseurl }}" class="btn {% if include.post.next == nil %}disabled{% endif %}">></a>
+	</div>
+
+	<script>
+	window.urls = {
+		previous: '{{ include.post.previous.url | prepend: site.baseurl }}',
+		next: '{{ include.post.next.url | prepend: site.baseurl }}'
+	};
+	</script>
+</div>
