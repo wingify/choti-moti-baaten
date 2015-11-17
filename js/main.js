@@ -4,7 +4,7 @@
 	}
 
 	window.addEventListener('keyup', function (e) {
-		if (!urls) { return true; }
+		if (!window.urls) { return true; }
 		if (e.keyCode === 37 && urls.previous) {
 			navigate(urls.previous);
 		}
