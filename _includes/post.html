@@ -14,7 +14,7 @@
 	<div class="nav-btns">
 		<a href="{{ include.post.previous.url | prepend: site.baseurl }}" class="btn {% if include.post.previous == nil %}disabled{% endif %}"><</a>
 
-		<a href="http://twitter.com/share?url={{ include.post.url | prepend: site.baseurl | prepend: site.url }}&text={{ include.post.content }}&count=horiztonal&via=wingify_engg&related=chinchang457" title="Tweet this!" class="btn">
+		<a id="js-post-tweet-link" href="http://twitter.com/share?url={{ include.post.url | prepend: site.baseurl | prepend: site.url }}&text={{ include.post.content }}&count=horiztonal&via=wingify_engg&related=chinchang457" title="Tweet this!" class="btn">
 			<span class="icon  icon--twitter">
                 <svg viewBox="0 0 16 16" style="transform:scale(2);position:relative;left:6px;">
                   <path fill="#ffffff" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
@@ -31,5 +31,7 @@
 		previous: '{{ include.post.previous.url | prepend: site.baseurl }}',
 		next: '{{ include.post.next.url | prepend: site.baseurl }}'
 	};
+	var link = document.querySelector('#js-post-tweet-link');
+	link.href = link.href.replace(/%3C\/*p%3E/g, '');
 	</script>
 </div>
