@@ -7,4 +7,4 @@ authorslug: kushagra_gour
 author: Kushagra Gour
 ---
 
-RootScope k prayog se bache. Wo dukhdaayi ho sakta hai.
+RootScope ke prayog se bache. Wo dukhdaayi ho sakta hai.
