@@ -261,6 +261,11 @@ body {
     left: 0;
     right: 0;
 }
+@include media-query(500px) {
+    .nav-btns {
+        position: static;
+    }
+}
 
 @-webkit-keyframes content-anim {
     from { opacity: 0; transform: translateY(10px); }
