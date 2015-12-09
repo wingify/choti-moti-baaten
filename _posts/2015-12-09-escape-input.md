@@ -2,8 +2,9 @@
 layout: post
 title:  "Surakshit app"
 categories: security, xss
-authorslug: dheeraj_joshi
-author: Dheeraj Joshi
+author:
+ twitter: djadmin
+ name: "Dheeraj Joshi"
 ---
 
 
