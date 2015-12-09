@@ -6,9 +6,12 @@
 			<p class="post-meta">{{ include.post.date | date: "%b %-d, %Y" }}{% if include.post.authorslug %} • <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>{% endif %}{% if include.post.meta %} • {{ include.post.meta }}{% endif %}</p>
 		</header>
 
-		<article class="post-content text-big">
-		{{ include.post.content }}
-		</article>
+		<article class="post-content text-big {%if include.post.layout == 'post' %}post-content--blog{% endif %}">
+			{{ include.post.content }}
+			{%if include.post.layout == 'post' %}
+			<div class="post-content__image"></div>
+			{% endif %}
+ 		</article>
 	</div>
 
 	<div class="nav-btns">
