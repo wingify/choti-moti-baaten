@@ -222,7 +222,7 @@ body {
 }
 
 .text-big {
-    font-size: 3.2em;
+    font-size: 2.5em;
 }
 
 .post-content {
@@ -254,13 +254,51 @@ body {
     }
 }
 
+.post-content--blog {
+        p {
+            padding: 15px;
+            border: 2px solid #cdcdcd;
+            border-radius: 15px;
+            position: relative;
+            margin-bottom: 20px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            border-right: 25px solid transparent;
+            border-left: 25px solid transparent;
+            border-top: 50px solid #cdcdcd;
+            bottom: -50px;
+            left: calc(50% - 25px);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            border-right: 23px solid transparent;
+            border-left: 23px solid transparent;
+            border-top: 46px solid #ffffff;
+            bottom: -46px;
+            left: calc(50% - 23px);
+        }
+
+    }
+}
+
+.post-content__image {
+    width: 200px;
+    height: 300px;
+    margin:  0 auto;
+    background: url('../images/shaktimaan.jpg') no-repeat center;
+    background-size: cover; 
+}
+
 .nav-btns {
     text-align: center;
-    position: absolute;
-    bottom: $spacing-unit*3;
-    left: 0;
-    right: 0;
 }
+
 @include media-query(500px) {
     .nav-btns {
         position: static;
@@ -271,6 +309,7 @@ body {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
 @keyframes content-anim {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
