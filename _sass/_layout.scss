@@ -257,10 +257,11 @@ body {
 .post-content--blog {
         p {
             padding: 15px;
-            border: 2px solid #cdcdcd;
+            border: 1px solid #ddd;
             border-radius: 15px;
             position: relative;
             margin-bottom: 20px;
+            background: white;
 
         &::before {
             content: '';
@@ -268,7 +269,7 @@ body {
             width: 0;
             border-right: 25px solid transparent;
             border-left: 25px solid transparent;
-            border-top: 50px solid #cdcdcd;
+            border-top: 50px solid #ddd;
             bottom: -50px;
             left: calc(50% - 25px);
         }
@@ -279,8 +280,8 @@ body {
             width: 0;
             border-right: 23px solid transparent;
             border-left: 23px solid transparent;
-            border-top: 46px solid #ffffff;
-            bottom: -46px;
+            border-top: 49px solid white;
+            bottom: -49px;
             left: calc(50% - 23px);
         }
 
@@ -289,10 +290,10 @@ body {
 
 .post-content__image {
     width: 200px;
-    height: 300px;
+    height: 261px;
     margin:  0 auto;
-    background: url('../images/shaktimaan.jpg') no-repeat center;
-    background-size: cover; 
+    background: url('../images/shaktimaan.png') no-repeat center;
+    background-size: cover;
 }
 
 .nav-btns {
