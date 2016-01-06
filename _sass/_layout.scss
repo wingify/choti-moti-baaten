@@ -1,317 +1,320 @@
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
 }
+
 /**
  * Site header
  */
 .site-header {
-    // border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    background: #6BB9F0;
-    color: white!important;
-    min-height: 56px;
+	// border-top: 5px solid $grey-color-dark;
+	border-bottom: 1px solid $grey-color-light;
+	background: #6BB9F0;
+	color: white !important;
+	min-height: 56px;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+	// Positioning context for the mobile navigation icon
+	position: relative;
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-    color: white!important;
+	font-size: 26px;
+	line-height: 56px;
+	letter-spacing: -1px;
+	margin-bottom: 0;
+	float: left;
+	color: white !important;
 }
 
 .site-nav {
-    float: right;
-    line-height: 56px;
+	float: right;
+	line-height: 56px;
 
-    .menu-icon {
-        display: none;
-    }
+	.menu-icon {
+		display: none;
+	}
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+	.page-link {
+		color: $text-color;
+		line-height: $base-line-height;
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
+		// Gaps between nav items, but not on the first one
+		&:not(:first-child) {
+			margin-left: 20px;
+		}
+	}
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+	@include media-query($on-palm) {
+		position: absolute;
+		top: 9px;
+		right: 30px;
+		background-color: $background-color;
+		border: 1px solid $grey-color-light;
+		border-radius: 5px;
+		text-align: right;
 
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
+		.menu-icon {
+			display: block;
+			float: right;
+			width: 36px;
+			height: 26px;
+			line-height: 0;
+			padding-top: 10px;
+			text-align: center;
 
-            > svg {
-                width: 18px;
-                height: 15px;
+			> svg {
+				width: 18px;
+				height: 15px;
 
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
+				path {
+					fill: $grey-color-dark;
+				}
+			}
+		}
 
-        .trigger {
-            clear: both;
-            display: none;
-        }
+		.trigger {
+			clear: both;
+			display: none;
+		}
 
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
+		&:hover .trigger {
+			display: block;
+			padding-bottom: 5px;
+		}
 
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
+		.page-link {
+			display: block;
+			padding: 5px 10px;
+		}
+	}
 }
-
-
 
 /**
  * Site footer
  */
 .site-footer {
-    opacity: 0.6;
-    padding: $spacing-unit 0 10px;
-    transition: 0.3s ease;
+	opacity: 0.6;
+	padding: $spacing-unit 0 10px;
+	transition: 0.3s ease;
 }
+
 .site-footer:hover {
-    opacity: 1;
+	opacity: 1;
 }
 
 .footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+	font-size: 18px;
+	margin-bottom: $spacing-unit / 2;
 }
 
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
+.contact-list, .social-media-list {
+	list-style: none;
+	margin-left: 0;
 }
 
 .footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
+	font-size: 15px;
+	color: $grey-color;
+	margin-left: -$spacing-unit / 2;
+	@extend %clearfix;
 }
 
 .footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+	float: left;
+	margin-bottom: $spacing-unit / 2;
+	padding-left: $spacing-unit / 2;
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+	width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+	width: calc(35% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+	width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+	width: calc(20% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+	width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+	width: calc(45% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
+	.footer-col-1, .footer-col-2 {
+		width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+		width: calc(50% - (#{$spacing-unit} / 2));
+	}
 
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+	.footer-col-3 {
+		width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+		width: calc(100% - (#{$spacing-unit} / 2));
+	}
 }
 
 @include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+	.footer-col {
+		float: none;
+		width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+		width: calc(100% - (#{$spacing-unit} / 2));
+	}
 }
-
-
 
 /**
  * Page content
  */
 .post-content-wrap {
-    -webkit-animation: content-anim 0.5s ease both;
-    animation: content-anim 0.5s ease both;
+	-webkit-animation: content-anim 0.5s ease both;
+	animation: content-anim 0.5s ease both;
 }
+
 .page-content {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    padding: $spacing-unit 0;
-    position: relative;
+	display: flex;
+	align-items: center;
+	flex: 1;
+	padding: $spacing-unit 0;
+	position: relative;
 }
 
 .page-heading {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 .post-list {
-    margin-left: 0;
-    list-style: none;
+	margin-left: 0;
+	list-style: none;
 
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+	> li {
+		margin-bottom: $spacing-unit;
+	}
 }
 
 .post-meta {
-    font-size: $small-font-size;
-    opacity: 0.5;
+	font-size: $small-font-size;
+	opacity: 0.5;
 }
 
 .post-link {
-    display: block;
-    font-size: 24px;
+	display: block;
+	font-size: 24px;
 }
-
 
 /**
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+	margin-bottom: $spacing-unit;
 }
 
 .post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
+	font-size: 42px;
+	letter-spacing: -1px;
+	line-height: 1;
 
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
+	@include media-query($on-laptop) {
+		font-size: 36px;
+	}
 }
 
 .text-big {
-    font-size: 2.5em;
+	font-size: 2.5em;
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+	margin-bottom: $spacing-unit;
 
+	h2 {
+		font-size: 32px;
 
-    h2 {
-        font-size: 32px;
+		@include media-query($on-laptop) {
+			font-size: 28px;
+		}
+	}
 
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
+	h3 {
+		font-size: 26px;
 
-    h3 {
-        font-size: 26px;
+		@include media-query($on-laptop) {
+			font-size: 22px;
+		}
+	}
 
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
+	h4 {
+		font-size: 20px;
 
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
+		@include media-query($on-laptop) {
+			font-size: 18px;
+		}
+	}
 }
 
 .post-content--blog {
-        p {
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 15px;
-            position: relative;
-            margin-bottom: 20px;
-            background: white;
+	padding: 15px;
+	border: 1px solid #ddd;
+	border-radius: 15px;
+	position: relative;
+	background: white;
 
-        &::before {
-            content: '';
-            position: absolute;
-            width: 0;
-            border-right: 25px solid transparent;
-            border-left: 25px solid transparent;
-            border-top: 50px solid #ddd;
-            bottom: -50px;
-            left: calc(50% - 25px);
-        }
+	&::before {
+		content: '';
+		position: absolute;
+		width: 0;
+		border-right: 25px solid transparent;
+		border-left: 25px solid transparent;
+		border-top: 50px solid #ddd;
+		bottom: -50px;
+		left: calc(50% - 25px);
+	}
 
-        &::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            border-right: 23px solid transparent;
-            border-left: 23px solid transparent;
-            border-top: 49px solid white;
-            bottom: -49px;
-            left: calc(50% - 23px);
-        }
-
-    }
+	&::after {
+		content: '';
+		position: absolute;
+		width: 0;
+		border-right: 23px solid transparent;
+		border-left: 23px solid transparent;
+		border-top: 49px solid white;
+		bottom: -49px;
+		left: calc(50% - 23px);
+	}
 }
 
 .post-content__image {
-    width: 200px;
-    height: 261px;
-    margin:  0 auto;
-    background: url('../images/shaktimaan.png') no-repeat center;
-    background-size: cover;
+	width: 200px;
+	height: 261px;
+	margin: 0 auto $spacing-unit;
+	background: url('../images/shaktimaan.png') no-repeat center;
+	background-size: cover;
 }
 
 .nav-btns {
-    text-align: center;
+	text-align: center;
 }
 
 @include media-query(500px) {
-    .nav-btns {
-        position: static;
-    }
+	.nav-btns {
+		position: static;
+	}
 }
 
 @-webkit-keyframes content-anim {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 @keyframes content-anim {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
