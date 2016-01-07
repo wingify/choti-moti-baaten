@@ -164,9 +164,9 @@ body {
 /**
  * Page content
  */
-.post-content-wrap {
-	-webkit-animation: content-anim 0.5s ease both;
-	animation: content-anim 0.5s ease both;
+.post-content--blog {
+	-webkit-animation: content-anim 0.5s ease both 2s;
+	animation: content-anim 0.5s ease both 2s;
 }
 
 .page-content {
@@ -285,6 +285,8 @@ body {
 	margin: 0 auto $spacing-unit;
 	background: url('../images/shaktimaan.png') no-repeat center;
 	background-size: cover;
+	-webkit-animation: content-spin 2s linear;
+	animation: content-spin 2s linear;
 }
 
 .nav-btns {
@@ -297,6 +299,21 @@ body {
 	}
 }
 
+@-webkit-keyframes content-spin {
+	0% {}
+	10% { -webkit-transform: rotateY(2880deg); }
+	30% { -webkit-transform: rotateY(1440deg); }
+	60% { -webkit-transform: rotateY(720deg); }
+	100% { -webkit-transform: rotateY(360deg); }
+}
+
+@keyframes content-spin {
+	10% { transform: rotateY(2880deg); }
+	30% { transform: rotateY(1440deg); }
+	60% { transform: rotateY(720deg); }
+	100% { transform: rotateY(360deg); }
+}
+
 @-webkit-keyframes content-anim {
 	from {
 		opacity: 0;
@@ -304,7 +321,7 @@ body {
 	}
 	to {
 		opacity: 1;
-		transform: translateY(0);
+		-webkit-transform: translateY(0);
 	}
 }
 
