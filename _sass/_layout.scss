@@ -300,16 +300,17 @@ body {
 }
 
 @-webkit-keyframes content-spin {
-	0% {}
+	0% { opacity: 0; }
 	10% { -webkit-transform: rotateY(2880deg); }
-	30% { -webkit-transform: rotateY(1440deg); }
+	30% { opacity: 1; -webkit-transform: rotateY(1440deg); }
 	60% { -webkit-transform: rotateY(720deg); }
 	100% { -webkit-transform: rotateY(360deg); }
 }
 
 @keyframes content-spin {
+	0% { opacity: 0; }
 	10% { transform: rotateY(2880deg); }
-	30% { transform: rotateY(1440deg); }
+	30% { opacity: 1; transform: rotateY(1440deg); }
 	60% { transform: rotateY(720deg); }
 	100% { transform: rotateY(360deg); }
 }
