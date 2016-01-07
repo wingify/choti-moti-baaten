@@ -6,10 +6,11 @@
 	{% endif %}
 
 	<div class="post-content-wrap">
+		<header class="post-header">
+			<p class="post-meta">{{ include.post.date | date: "%b %-d, %Y" }}{% if author != null %} • <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>{% endif %}{% if include.post.meta %} • {{ include.post.meta }}{% endif %}</p>
+		</header>
+
 		<article class="post-content text-big post-content--blog">
-			<header class="post-header">
-				<p class="post-meta">{{ include.post.date | date: "%b %-d, %Y" }}{% if author != null %} • <a href="https://twitter.com/{{ author.twitter }}">@{{ author.twitter }}</a>{% endif %}{% if include.post.meta %} • {{ include.post.meta }}{% endif %}</p>
-			</header>
 			{{ include.post.content }}
  		</article>
 		<div class="post-content__image"></div>
