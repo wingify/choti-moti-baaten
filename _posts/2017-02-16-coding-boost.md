@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Coding boost"
-date:   2017-01-16 10:46:00
+date:   2017-02-16 10:46:00
 categories: coding, programming
 author:
  twitter: amit_merchant
