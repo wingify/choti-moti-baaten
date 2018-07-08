@@ -8,4 +8,4 @@ author:
  name: Abhishek Jairath
 ---
 
-"Promise" karo ki callback hell se door rahoge.
+Promise करो की callback hell से दूर रहोगे!

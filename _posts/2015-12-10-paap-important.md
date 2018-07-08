@@ -8,4 +8,4 @@ author:
  name: Rachit Gulati
 ---
 
-'!important' sabka baap hai magar isko lagana paap hai.
+!important सबका बाप है, मगर इसको लगाना पाप है!
