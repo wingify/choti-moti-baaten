@@ -8,4 +8,4 @@ author:
  name: Sahil Batla
 ---
 
-Ek acha Prani(Human) wahi hai jo 'Global Warming' and 'Global Variables' dono kum kare.
+एक अच्छा प्राणी वही है जो Global Warming और Global Variables दोनों कम करता है!

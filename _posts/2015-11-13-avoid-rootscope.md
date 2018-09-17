@@ -7,4 +7,4 @@ authorslug: kushagra_gour
 author: Kushagra Gour
 ---
 
-RootScope ke prayog se bache. Wo dukhdaayi ho sakta hai.
+$rootScope के प्रयोग से बचें! वो दुखदायी हो सकता है!

@@ -8,4 +8,4 @@ author:
  name: Sahil Batla
 ---
 
-Sirf 'Promise' mat karo, Use 'Resolve' bhi karo
+सिर्फ Promise मत करो, उसे Resolve भी करो!

@@ -7,4 +7,4 @@ author:
  name: "Dheeraj Joshi"
 ---
 
-User ka diya gaya sab kuch *escape* karo, aur app ko surakshit banao.
+User का दिया गया सब कुछ escape करो और अपने app को सुरक्षित बनाओ!
